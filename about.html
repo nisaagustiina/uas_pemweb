@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Tentang HTML, CSS, dan JS</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(120deg, #331000, #1a0000);
+      color: white;
+    }
+
+    .content {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding: 80px 20px;
+    }
+
+    .card {
+      width: 300px;
+      background: rgba(255, 100, 0, 0.1);
+      border: 2px solid orange;
+      padding: 20px;
+      border-radius: 8px;
+      clip-path: polygon(8% 0%, 100% 0%, 100% 85%, 92% 100%, 0% 100%, 0% 15%);
+      box-shadow: 0 0 15px rgba(255, 150, 50, 0.5);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .number {
+      font-size: 24px;
+      font-weight: bold;
+      color: orange;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      margin: 0;
+      color: orange;
+    }
+
+    .card p {
+      font-size: 14px;
+      line-height: 1.6;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="content">
+    <!-- Kartu HTML -->
+    <div class="card">
+      <div class="number">01</div>
+      <h3>Struktur Dasar Website</h3>
+      <p>
+        HTML (HyperText Markup Language) adalah fondasi dari setiap halaman web. Dengan HTML, kita menentukan struktur dan isi seperti teks, gambar, dan tautan. HTML adalah langkah awal dalam membangun dunia digital.
+      </p>
+    </div>
+
+    <!-- Kartu CSS -->
+    <div class="card">
+      <div class="number">02</div>
+      <h3>Tampilan yang Menarik</h3>
+      <p>
+        CSS (Cascading Style Sheets) bertugas menghias halaman web agar lebih indah dan responsif. Mulai dari warna, ukuran, layout, hingga animasi — semua dikendalikan oleh CSS untuk menciptakan pengalaman visual yang keren.
+      </p>
+    </div>
+
+    <!-- Kartu JS -->
+    <div class="card">
+      <div class="number">03</div>
+      <h3>Membuat Web Interaktif</h3>
+      <p>
+        JavaScript adalah bahasa pemrograman yang memberikan nyawa pada website. Dengan JavaScript, kita bisa membuat tombol bergerak, halaman berubah otomatis, hingga aplikasi web yang interaktif dan dinamis.
+      </p>
+    </div>
+  </section>
+
+</body>
+</html>
