@@ -1,42 +1,78 @@
-body{
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    scroll-behavior: smooth;
     background-color: #ffffff;
 }
 
-.course-card{
-   background-color: #fefaf5;
-   border-radius: 1rem;
-   padding: 1.5rem;
-   height: 100%; 
+.hero h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
 }
 
-.course-card h5{
+.highlight {
+    border-bottom: 4px solid #ff7937;
+    display: inline-block;
+}
+
+.cta-button {
+    background-color: #ff7937;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+section {
+    padding: 6rem 1rem;
+}
+
+.hero-img {
+    max-width: 100%;
+    border-radius: 1rem;
+}
+
+.navbar-brand span {
+    font-weight: bold;
+}
+
+.course-card {
+    background-color: #fefaf5;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    height: 100%;
+}
+
+.course-card h5 {
     font-weight: 600;
 }
 
-.course-card p{
+.course-card p {
     font-size: 0.95rem;
 }
 
 .course-icon {
-  width: 40px;
-  height: 40px;
-  margin-bottom: 0.75rem;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0.75rem;
 }
 
 .course-icon svg {
-  width: 100%;
-  height: 100%;
-  display: block;
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 
-.btn-learn{
+.btn-learn {
     background-color: #1c1c1c;
     margin-top: 1rem;
 }
 
 @media (max-width: 768px) {
-  .course-icon {
-    width: 32px;
-    height: 32px;
-  }
+    .course-icon {
+        width: 32px;
+        height: 32px;
+    }
 }
