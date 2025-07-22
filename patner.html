@@ -2,71 +2,56 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Partner Kami</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Link Partner</title>
+
   <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
-      display: flex;
-      height: 100vh;
-    }
-    .left {
-      flex: 1;
-      background-color: #;
-      color: black;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      padding: 20px;
-    }
-    .left img {
-      width: 200px;
-      border-radius: 15px;
-      margin-bottom: 20px;
-    }
-    .right {
-      flex: 1;
-      background-color: #000;
+      background: linear-gradient(to right, #ffa500, #ff4500);
       color: white;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 50px;
+      padding: 40px;
+      text-align: center;
     }
-    .right h2 {
+
+    h1 {
       margin-bottom: 30px;
     }
-    .right a {
-      color: rgb(245, 239, 239);
-      text-decoration: none;
-      margin: 10px 0;
-      font-size: 18px;
-      border-bottom: 1px solid white;
-      padding-bottom: 5px;
-      width: fit-content;
+
+    .partner-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
     }
-    .right a:hover {
-      text-decoration: underline;
+
+    .partner {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+      width: 180px;
+      text-decoration: none;
+      color: white;
+      transition: 0.3s;
+    }
+
+    .partner:hover {
+      background-color: rgba(255, 255, 255, 0.2);
     }
   </style>
 </head>
 <body>
-
-  <div class="left">
-    <img src="logo 1.jpeg" alt="Logo Kelompok">
-    <h1>Kelom 1</h1>
-    <p> Dasar Pemrograman</p>
+  
+  <section class="partner-section">
+  <h2> link Partner kami:</h2>
+  <div class="partner-container">
+    <a class="partner-card" href="#">Nur</a>
+    <a class="partner-card" href="#">Nisa</a>
+    <a class="partner-card" href="#">Dzaky</a>
+    <a class="partner-card" href="#">Raka</a>
+    <a class="partner-card" href="#">Nauval</a>
   </div>
-
-  <div class="right">
-    <h2>Partner Link</h2>
-    <a href="#">Profil Kelompok</a>
-    <a href="#">Struktur Tim</a>
-    <a href="#">Proyek & Tugas</a>
-    <a href="#">Berita Kelas</a>
-    <a href="#">Hubungi Kami</a>
-  </div>
-
+</section>   
+  
 </body>
 </html>
