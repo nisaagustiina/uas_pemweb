@@ -69,6 +69,30 @@ section {
     background-color: #1c1c1c;
     margin-top: 1rem;
 }
+ <style>
+  .partner-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 40px auto;
+    padding: 10px 0;
+  }
+
+  .partner-card {
+    background-color: #ff6a00;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+  }
+
+  .partner-card:hover {
+    background-color: #e45c00;
+  }
+</style>
 
 @media (max-width: 768px) {
     .course-icon {
