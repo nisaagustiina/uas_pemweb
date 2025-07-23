@@ -65,7 +65,7 @@
                         </h1>
                         <p class="mt-3">
                             Pelajari dasar-dasar pemrograman web, mulai dari
-                            HTML, CSS, hingga Node.Js pada situs web kami.
+                            <b>HTML</b>, <b>CSS</b>, hingga <b>Node.Js</b> pada situs web kami.
                         </p>
                         <a href="#join" class="cta-button mt-3 d-inline-block">Join us now!</a>
                     </div>
@@ -412,73 +412,10 @@
             </div>
         </div>
     </footer>
-    <!-- Bootstrap JS dan Popper -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            document.querySelector('#joinForm').addEventListener('submit', function (e) {
-                e.preventDefault();
-                const name = document.querySelector('#name').value;
-                alert(`${name} tersubmit`);
-                const modal = bootstrap.Modal.getInstance(document.querySelector('#joinModal'));
-                modal.hide();
-            });
-        });
-    </script>
+
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/swiper/js/swiper-bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            function resetForm() {
-                document.querySelector("#name").value = "";
-                document.querySelector("#email").value = "";
-                document.querySelector("#description").value = "";
-            }
-
-            document
-                .querySelector("#joinForm")
-                .addEventListener("submit", function (e) {
-                    e.preventDefault();
-                    const name = document.querySelector("#name").value;
-                    alert(
-                        `Hi, ${name} form kamu sudah terkirim! Nantikan email dari kami untuk informasi selanjutnya.`
-                    );
-
-                    // Close modal
-                    document.querySelector("#joinModal .btn-close").click();
-
-                    // Reset form setelah submit
-                    setTimeout(() => {
-                        resetForm();
-                    }, 200);
-                });
-
-            document
-                .querySelector("#joinModal .btn-close")
-                .addEventListener("click", function () {
-                    setTimeout(() => {
-                        resetForm();
-                    }, 300);
-                });
-
-            const closeButton = document.querySelector(
-                "#joinModal .btn-secondary"
-            );
-            if (closeButton) {
-                closeButton.addEventListener("click", function () {
-                    setTimeout(() => {
-                        resetForm();
-                    }, 300);
-                });
-            }
-
-            document
-                .querySelector("#joinModal")
-                .addEventListener("hidden.bs.modal", function () {
-                    resetForm();
-                });
-        });
-    </script>
 </body>
 
 </html>
