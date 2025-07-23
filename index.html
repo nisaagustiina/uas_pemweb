@@ -4,13 +4,25 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UAS Pemweb</title>
+    <title>Mini Online Course</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Mini Online Course adalah platform pembelajaran daring dengan materi singkat, interaktif, dan mudah diakses kapan saja." />
+    <meta name="keywords"
+        content="online course, pembelajaran daring, mini course, belajar online, materi singkat, pendidikan digital" />
+    <meta name="author" content="Kelompok 1 - Pemrograman Web" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/favicon.png" type="image/png" />
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap"
         rel="stylesheet" />
+
     <!-- Bootstrap CSS -->
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="assets/vendor/swiper/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
@@ -23,7 +35,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="#">
-                <span>Mini Online Course</span>
+                <img src="assets/img/moc-logo.webp" alt="Logo" height="40" />
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
                 <span class="navbar-toggler-icon"></span>
@@ -56,22 +68,22 @@
         <!-- section hero -->
         <section class="hero d-flex align-items-center" id="home" style="margin-top: 80px">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <h1>
+                <div class="row align-items-center flex-column-reverse flex-lg-row text-center text-lg-start">
+                    <div class="col-lg-6 mt-4 mt-lg-0">
+                        <h1 class="fs-3 fs-lg-1">
                             Cari dan temukan <br />
                             pelatihan terbaik untukmu <br />
                             <span class="highlight">dengan mudah</span>
                         </h1>
                         <p class="mt-3">
                             Pelajari dasar-dasar pemrograman web, mulai dari
-                            <b>HTML</b>, <b>CSS</b>, hingga <b>Node.Js</b> pada situs web kami.
+                            <b>HTML</b>, <b>CSS</b>, <b>Javascript</b>, hingga <b>Node.Js</b> pada situs web kami.
                         </p>
                         <a href="#join" class="cta-button mt-3 d-inline-block">Join us now!</a>
                     </div>
-                    <div class="col-lg-6 text-center">
+                    <div class="col-lg-6">
                         <img src="https://media.istockphoto.com/id/1334063560/photo/african-americans-college-students-e-leaning-with-their-teacher-during-a-class.jpg?s=612x612&w=0&k=20&c=6ADofCPEBlGPK1MFGM44sfdCe9sjMzzzzK0MkZTcLw8="
-                            alt="Student Image" class="hero-img" />
+                            alt="Student Image" class="img-fluid rounded hero-img" />
                     </div>
                 </div>
             </div>
@@ -217,7 +229,7 @@
             </div>
         </div>
         <!-- section testimoni -->
-        <div class="container py-5">
+        <div class="container py-5" id="testimoni">
             <div class="row align-items-center testimonial-content">
                 <div class="col-lg-5 col-md-10 mx-auto mx-lg-0 testimonial-left text-center text-lg-start mb-4 mb-lg-0">
                     <div class="mb-3">
@@ -254,7 +266,7 @@
                                             diberikan juga relevan dengan
                                             kebutuhan dunia kerja saat ini."
                                         </p>
-                                        <div class="d-flex align-items-center">
+                                        <div class="d-flex align-items-center mb-3">
                                             <img src="https://gravatar.com/avatar/8927c9ae5abeb7493586eb41110bd382?s=400&d=mp&r=x"
                                                 class="rounded-circle me-3" alt="Resky Fernanda" style="
                                                         width: 50px;
@@ -283,62 +295,147 @@
                                             Apa kata mereka
                                         </h5>
                                         <p class="card-text fs-5 fw-bold text-dark lh-base mb-4">
-                                            "Saya belajar banyak dari website ini,
-                                            Mantab banget!!"
+                                            "Kursus di MOC sangat membantu saya memahami industri secara mendalam.
+                                            Materi yang diberikan sangat up-to-date dan bisa langsung diterapkan di
+                                            pekerjaan."
                                         </p>
-                                        <div class="d-flex align-items-center">
+                                        <div class="d-flex align-items-center mb-3">
                                             <img src="https://gravatar.com/avatar/8927c9ae5abeb7493586eb41110bd382?s=400&d=mp&r=x"
-                                                class="rounded-circle me-3" alt="Rei" style="
+                                                class="rounded-circle me-3" alt="Andi Wijaya" style="
                                                         width: 50px;
                                                         height: 50px;
                                                         object-fit: cover;
                                                     " />
                                             <div>
                                                 <h6 class="fs-6 fw-bold text-dark mb-0">
-                                                    Rei
+                                                    Andi Wijaya
                                                 </h6>
                                                 <p class="fs-6 text-secondary mb-0">
-                                                    Frontend Developer di
-                                                    Gojek
+                                                    Data Scientist di Gojek
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="swiper-slide">
+                                <div class="card p-4 h-100 border-0 rounded-4" style="background-color: #fefaf5">
+                                    <div class="card-body">
+                                        <h5 class="card-title fs-6 fw-bold text-orange mb-3" style="
+                                                    color: #ff7937 !important;
+                                                ">
+                                            Apa kata mereka
+                                        </h5>
+                                        <p class="card-text fs-5 fw-bold text-dark lh-base mb-4">
+                                            "Pengalaman belajar yang luar biasa di MOC! Instrukturnya ahli dan sangat
+                                            sabar dalam membimbing, membuat proses belajar jadi mudah dan menyenangkan."
+                                        </p>
+                                        <div class="d-flex align-items-center mb-3">
+                                            <img src="https://gravatar.com/avatar/8927c9ae5abeb7493586eb41110bd382?s=400&d=mp&r=x"
+                                                class="rounded-circle me-3" alt="Putri Lestari" style="
+                                                        width: 50px;
+                                                        height: 50px;
+                                                        object-fit: cover;
+                                                    " />
+                                            <div>
+                                                <h6 class="fs-6 fw-bold text-dark mb-0">
+                                                    Putri Lestari
+                                                </h6>
+                                                <p class="fs-6 text-secondary mb-0">
+                                                    Digital Marketing Specialist di Traveloka
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card p-4 h-100 border-0 rounded-4" style="background-color: #fefaf5">
+                                    <div class="card-body">
+                                        <h5 class="card-title fs-6 fw-bold text-orange mb-3" style="
+                                                    color: #ff7937 !important;
+                                                ">
+                                            Apa kata mereka
+                                        </h5>
+                                        <p class="card-text fs-5 fw-bold text-dark lh-base mb-4">
+                                            "MOC memberikan ilmu yang praktis dan sangat berguna. Modulnya terstruktur
+                                            dengan baik dan sesi mentoringnya interaktif, sangat direkomendasikan!"
+                                        </p>
+                                        <div class="d-flex align-items-center mb-3">
+                                            <img src="https://gravatar.com/avatar/8927c9ae5abeb7493586eb41110bd382?s=400&d=mp&r=x"
+                                                class="rounded-circle me-3" alt="Budi Santoso" style="
+                                                        width: 50px;
+                                                        height: 50px;
+                                                        object-fit: cover;
+                                                    " />
+                                            <div>
+                                                <h6 class="fs-6 fw-bold text-dark mb-0">
+                                                    Budi Santoso
+                                                </h6>
+                                                <p class="fs-6 text-secondary mb-0">
+                                                    Software Engineer di Bukalapak
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card p-4 h-100 border-0 rounded-4" style="background-color: #fefaf5">
+                                    <div class="card-body">
+                                        <h5 class="card-title fs-6 fw-bold text-orange mb-3" style="
+                                                    color: #ff7937 !important;
+                                                ">
+                                            Apa kata mereka
+                                        </h5>
+                                        <p class="card-text fs-5 fw-bold text-dark lh-base mb-4">
+                                            "Saya sangat terkesan dengan MOC. Kurikulumnya relevan, dukungan mentor luar
+                                            biasa, dan peluang karir terbuka lebar setelah lulus dari sini."
+                                        </p>
+                                        <div class="d-flex align-items-center mb-3">
+                                            <img src="https://gravatar.com/avatar/8927c9ae5abeb7493586eb41110bd382?s=400&d=mp&r=x"
+                                                class="rounded-circle me-3" alt="Dewi Anggraini" style="
+                                                        width: 50px;
+                                                        height: 50px;
+                                                        object-fit: cover;
+                                                    " />
+                                            <div>
+                                                <h6 class="fs-6 fw-bold text-dark mb-0">
+                                                    Dewi Anggraini
+                                                </h6>
+                                                <p class="fs-6 text-secondary mb-0">
+                                                    UI/UX Designer di Shopee
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
-                        <div class="swiper-pagination"></div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination mb-3"></div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- section join us -->
-        <section id="join" class="py-5 d-flex align-items-center" style="background-color: #ff7937; height: 512px">
+        <section id="join" class="py-5 d-flex align-items-center">
             <div class="container text-center">
-                <p class="mb-0 text-white" style="font-size: 48px">
+                <p class="mb-0 text-white display-6 display-md-4 fw-semibold">
                     Mari bergabung bersama 3000+ peserta lainnya
                 </p>
-                <p class="mb-4 text-white" style="font-size: 48px">
+                <p class="mb-4 text-white display-6 display-md-4 fw-semibold">
                     dan raih mimpimu!
                 </p>
                 <div class="d-flex justify-content-center">
-                    <a href="#" class="btn fw-bold text-white" data-bs-toggle="modal" data-bs-target="#joinModal" style="
-                                background: #1c1c1c;
-                                width: 205px;
-                                height: 55px;
-                                font-size: 18px;
-                                border-radius: 8px;
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                            ">
+                    <a href="#" class="btn btn-join fw-bold text-white" data-bs-toggle="modal" data-bs-target="#joinModal">
                         Join us now!
                     </a>
                 </div>
             </div>
         </section>
+
     </main>
 
     <!-- Modal Form -->
@@ -379,35 +476,33 @@
     </div>
 
     <!-- footer -->
-    <footer class="bg-dark text-light py-4">
+    <footer class="bg-dark text-light py-5">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4 mb-3 mb-md-0 d-flex align-items-center">
-                    <div class="me-3">
-                        <span class="text-white fw-bold px-3 py-2 rounded" style="background-color: #ff7937">MOC</span>
+            <div class="row text-center text-md-start">
+                <div class="col-12 col-md-6 mb-4 mb-md-0 d-flex justify-content-center justify-content-md-start">
+                    <img src="assets/img/moc-logo-white.webp" alt="Logo" height="40" />
+                </div>
+                <div class="col-12 col-md-3 mb-4 mb-md-0">
+                    <div class="fw-bold mb-2">Mini Online Course</div>
+                    <div class="mb-2">Ragunan, Pasar Minggu</div>
+                    <div class="mb-2">12550, Indonesia</div>
+                    <div class="mb-2">
+                        <a href="tel:+62810888888" class="text-light text-decoration-none">
+                            +62 810 888 888
+                        </a>
                     </div>
                     <div>
-                        <div>Mini</div>
-                        <div>Online</div>
-                        <div>Course</div>
+                        <a href="mailto:hello@moc.com" class="text-light text-decoration-none">hello@moc.com</a>
                     </div>
                 </div>
-                <div class="col-md-4 mb-3 mb-md-0">
-                    <div>Mini Online Course</div>
-                    <div>Ragunan, Pasar Minggu</div>
-                    <div>12550 Indonesia</div>
-                    <div class="mt-2">+62 810 888 888</div>
-                    <div>
-                        <a href="mailto:hello@moc.com">hello@moc.com</a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div>
-                        <a href="#about" class="text-light text-decoration-none d-block mb-1">About Us</a>
-                        <a href="#courses" class="text-light text-decoration-none d-block mb-1">Courses</a>
-                        <a href="#testimoni" class="text-light text-decoration-none d-block mb-1">Testimonial</a>
-                        <a href="#join" class="text-light text-decoration-none d-block mb-1">Join Us</a>
-                    </div>
+
+                <!-- Navigasi -->
+                <div class="col-12 col-md-3">
+                    <a href="#home" class="text-light text-decoration-none d-block mb-2">Home</a>
+                    <a href="#about" class="text-light text-decoration-none d-block mb-2">About Us</a>
+                    <a href="#courses" class="text-light text-decoration-none d-block mb-2">Courses</a>
+                    <a href="#testimoni" class="text-light text-decoration-none d-block mb-2">Testimonial</a>
+                    <a href="#join" class="text-light text-decoration-none d-block">Join Us</a>
                 </div>
             </div>
         </div>

@@ -8,10 +8,10 @@ const testiSwiper = new Swiper(".testiSwiper", {
     clickable: true,
   },
 
-  // Navigasi
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+  // Autoplay
+  autoplay: {
+    delay: 3000, 
+    disableOnInteraction: false, 
   },
 });
 

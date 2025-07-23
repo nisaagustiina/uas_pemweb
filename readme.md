@@ -1,12 +1,12 @@
 # Website Mini Course
 
-Website ini dibuat untuk memenuhi tugas uas Pemrograman Web
+Website ini dibuat untuk memenuhi tugas UAS Pemrograman Web
 
 ## 👥 Anggota Kelompok
 
 - Nisa Agustina
 - Raka
-- Zacky
+- Muhammad Zacky Kurniawan
 - Nurlian
 - Nauval
 
