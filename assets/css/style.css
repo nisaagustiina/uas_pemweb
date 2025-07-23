@@ -296,15 +296,17 @@ section {
   section {
     padding: 5rem 2rem;
   }
-
-  .hero h1 {
-    font-size: 1.8rem;
-  }
 }
 
 @media (min-width: 992px) {
   section {
     padding: 6rem 3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero h1 {
+    font-size: 1.8rem;
   }
 }
 
