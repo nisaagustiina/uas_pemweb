@@ -5,7 +5,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mini Online Course</title>
-
     <!-- SEO Meta Tags -->
     <meta name="description"
         content="Mini Online Course adalah platform pembelajaran daring dengan materi singkat, interaktif, dan mudah diakses kapan saja." />
@@ -15,14 +14,11 @@
 
     <!-- Favicon -->
     <link rel="icon" href="assets/img/favicon.png" type="image/png" />
-
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap"
         rel="stylesheet" />
-
     <!-- Bootstrap CSS -->
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-
     <link rel="stylesheet" href="assets/vendor/swiper/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
@@ -32,36 +28,38 @@
     <audio src="assets/audio/audio1.mp3" autoplay loop hidden></audio>
 
     <!-- header-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="assets/img/moc-logo.webp" alt="Logo" height="40" />
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="assets/img/moc-logo.webp" alt="Logo" width="120" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
-                <ul class="navbar-nav mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#courses">Courses</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#testimoni">Testimonial</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#join">Join Us</a>
-                    </li>
-                </ul>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#courses">Courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimoni">Testimonial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#join">Join Us</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <!-- main -->
     <main>
@@ -88,7 +86,6 @@
                 </div>
             </div>
         </section>
-        
         <!-- link patrner -->
         <section class="partner-section">
             <h2>Partner Kami</h2>
@@ -111,40 +108,44 @@
                 </div>
             </div>
         </section>
-
         <!-- section about us -->
         <section class="about-section" id="about">
             <div class="about-content container">
-                <!-- VIDEO DI KIRI -->
-                <div class="about-video" style="flex: 1;">
+                <div class="about-video" style="flex: 1">
                     <video src="assets/video/video.mp4" autoplay muted loop controls></video>
                 </div>
-
-                <!-- TEKS + TABEL DI KANAN -->
                 <div class="about-text">
                     <h1>Tentang Kami</h1>
                     <p>
-                        Kami adalah tim yang berdedikasi untuk membantu Anda memahami dasar-dasar <em>pemrograman</em>
-                        dari nol.
-                        Dengan pengalaman di bidang edukasi digital, kami menyusun materi yang <strong>mudah
-                            dipahami</strong>,
-                        interaktif, dan relevan dengan kebutuhan industri masa kini.
+                        Kami adalah tim yang berdedikasi untuk membantu Anda
+                        memahami dasar-dasar <em>pemrograman</em> dari nol.
+                        Dengan pengalaman di bidang edukasi digital, kami
+                        menyusun materi yang
+                        <strong>mudah dipahami</strong>, interaktif, dan
+                        relevan dengan kebutuhan industri masa kini.
                     </p>
                     <p>
-                        <span style="background-color: #fff3cd; padding: 2px 6px; border-radius: 4px;">
-                            Apakah Anda baru mulai belajar coding?
-                        </span><br />
-                        Bersama kami, Anda akan dipandu untuk memahami <strong>HTML</strong>, <strong>CSS</strong>,
-                        <strong>JavaScript</strong>, dan <strong>logika pemrograman</strong> dengan pendekatan
-                        menyenangkan.
+                        <span style="
+                                    background-color: #fff3cd;
+                                    padding: 2px 6px;
+                                    border-radius: 4px;
+                                ">
+                            Apakah Anda baru mulai belajar coding? </span><br />
+                        Bersama kami, Anda akan dipandu untuk memahami
+                        <strong>HTML</strong>, <strong>CSS</strong>,
+                        <strong>JavaScript</strong>, dan
+                        <strong>logika pemrograman</strong> dengan
+                        pendekatan menyenangkan.
                     </p>
                     <p>
-                        Kami percaya bahwa belajar pemrograman haruslah <em>menyenangkan, terarah,</em> dan
+                        Kami percaya bahwa belajar pemrograman haruslah
+                        <em>menyenangkan, terarah,</em> dan
                         <em>bermanfaat</em> dalam kehidupan nyata.
                     </p>
-
-                    <!-- TABEL DATA PERKEMBANGAN IT -->
-                    <p>Berikut adalah data perkembangan kebutuhan tenaga IT dalam beberapa tahun terakhir:</p>
+                    <p>
+                        Berikut adalah data perkembangan kebutuhan tenaga IT
+                        dalam beberapa tahun terakhir:
+                    </p>
                     <table class="table-info">
                         <thead>
                             <tr>
@@ -156,36 +157,49 @@
                         <tbody>
                             <tr>
                                 <td data-label="Tahun">2022</td>
-                                <td data-label="Kebutuhan Tenaga IT">3,5 juta posisi</td>
-                                <td data-label="Teknologi Populer">Web Development, AI, Cloud</td>
+                                <td data-label="Kebutuhan Tenaga IT">
+                                    3,5 juta posisi
+                                </td>
+                                <td data-label="Teknologi Populer">
+                                    Web Development, AI, Cloud
+                                </td>
                             </tr>
                             <tr>
                                 <td data-label="Tahun">2023</td>
-                                <td data-label="Kebutuhan Tenaga IT">4,2 juta posisi</td>
-                                <td data-label="Teknologi Populer">AI, Data Science, Mobile</td>
+                                <td data-label="Kebutuhan Tenaga IT">
+                                    4,2 juta posisi
+                                </td>
+                                <td data-label="Teknologi Populer">
+                                    AI, Data Science, Mobile
+                                </td>
                             </tr>
                             <tr>
                                 <td data-label="Tahun">2024</td>
-                                <td data-label="Kebutuhan Tenaga IT">5+ juta posisi</td>
-                                <td data-label="Teknologi Populer">Cybersecurity, AI, DevOps</td>
+                                <td data-label="Kebutuhan Tenaga IT">
+                                    5+ juta posisi
+                                </td>
+                                <td data-label="Teknologi Populer">
+                                    Cybersecurity, AI, DevOps
+                                </td>
                             </tr>
                             <tr>
                                 <td data-label="Tahun">2025</td>
-                                <td data-label="Kebutuhan Tenaga IT">5,8+ juta posisi</td>
-                                <td data-label="Teknologi Populer">AI Generatif, Full-Stack Web, Cloud Native</td>
+                                <td data-label="Kebutuhan Tenaga IT">
+                                    5,8+ juta posisi
+                                </td>
+                                <td data-label="Teknologi Populer">
+                                    AI Generatif, Full-Stack Web, Cloud
+                                    Native
+                                </td>
                             </tr>
                         </tbody>
                     </table>
-
-                    <!-- TOMBOL CTA -->
-                    <!-- <a href="#detail" class="btn-orange">Lihat Detail</a> -->
+                    <a href="#" class="btn-orange">Lihat Detail</a>
                 </div>
-
             </div>
         </section>
-
         <!-- section courses -->
-        <div class="container py-5" id="courses">
+        <section class="container py-5" id="courses">
             <h2 class="text-center mb-5 fw-bold">
                 Our Best Courses for You
             </h2>
@@ -322,9 +336,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- section testimoni -->
-        <div class="container py-5" id="testimoni">
+        <section class="container py-5" id="testimoni">
             <div class="row align-items-center testimonial-content">
                 <div class="col-lg-5 col-md-10 mx-auto mx-lg-0 testimonial-left text-center text-lg-start mb-4 mb-lg-0">
                     <div class="mb-3">
@@ -513,7 +527,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- section join us -->
         <section id="join" class="py-5 d-flex align-items-center">
             <div class="container text-center">
@@ -524,14 +538,12 @@
                     dan raih mimpimu!
                 </p>
                 <div class="d-flex justify-content-center">
-                    <button class="btn btn-join fw-bold text-white" data-bs-toggle="modal"
-                        data-bs-target="#joinModal">
+                    <button class="btn btn-join fw-bold text-white" data-bs-toggle="modal" data-bs-target="#joinModal">
                         Join us now!
                     </button>
                 </div>
             </div>
         </section>
-
     </main>
 
     <!-- Modal Form -->
@@ -540,7 +552,9 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="joinModalLabel">Gabung Sekarang !!!</h5>
+                    <h5 class="modal-title" id="joinModalLabel">
+                        Gabung Sekarang !!!
+                    </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -575,8 +589,8 @@
     <footer class="bg-dark text-light py-5">
         <div class="container">
             <div class="row text-center text-md-start">
-                <div class="col-12 col-md-6 mb-4 mb-md-0 d-flex justify-content-center justify-content-md-start">
-                    <img src="assets/img/moc-logo-white.webp" alt="Logo" height="40" />
+                <div class="col-12 col-md-6 mb-4 mb-md-0 justify-content-md-start">
+                    <img src="assets/img/moc-logo-white.webp" alt="Logo" width="120" height="" />
                 </div>
                 <div class="col-12 col-md-3 mb-4 mb-md-0">
                     <div class="fw-bold mb-2">Mini Online Course</div>
@@ -603,7 +617,132 @@
             </div>
         </div>
     </footer>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/swiper/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
 
+    <!-- Modal Courses -->
+    <div class="modal fade" id="htmlModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">
+                        HTML
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">Html adalah bahasa markup yang digunakan untuk membuat struktur halaman web.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="cssModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">
+                        CSS
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">CSS adalah bahasa stylesheet yang digunakan untuk mengatur tampilan dan layout
+                    halaman web.</div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="jsModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">
+                        JavaScript
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">JavaScript adalah bahasa pemrograman yang digunakan untuk membuat halaman web
+                    menjadi interaktif.</div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="mysqlModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">
+                        MySQL
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">MySQL adalah sistem manajemen basis data yang digunakan untuk menyimpan dan
+                    mengelola data.</div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="reactModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">
+                        React Js
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">React adalah pustaka JavaScript untuk membangun antarmuka pengguna.</div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="nodeModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">
+                        Node.js
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">Node.js adalah runtime JavaScript yang dibangun di atas mesin V8 Chrome untuk
+                    membangun aplikasi jaringan yang cepat dan skalabel.</div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS dan Popper -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/swiper/js/swiper-bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
