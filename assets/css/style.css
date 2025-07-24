@@ -1,78 +1,322 @@
 body {
-    font-family: "Plus Jakarta Sans", sans-serif;
-    scroll-behavior: smooth;
-    background-color: #ffffff;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  scroll-behavior: smooth;
+  background-color: #ffffff;
 }
 
 .hero h1 {
-    font-size: 2.8rem;
-    font-weight: 700;
+  font-size: 2.8rem;
+  font-weight: 700;
 }
 
 .highlight {
-    border-bottom: 4px solid #ff7937;
-    display: inline-block;
+  border-bottom: 4px solid #ff7937;
+  display: inline-block;
 }
 
 .cta-button {
-    background-color: #ff7937;
-    color: #fff;
-    padding: 0.75rem 1.5rem;
-    border: none;
-    border-radius: 8px;
-    font-weight: 600;
-    font-size: 1rem;
-    text-decoration: none;
+  background-color: #ff7937;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
 }
 
 section {
-    padding: 6rem 1rem;
+  padding: 4rem 1rem;
 }
 
 .hero-img {
-    max-width: 100%;
-    border-radius: 1rem;
+  max-width: 100%;
+  border-radius: 1rem;
 }
 
 .navbar-brand span {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .course-card {
-    background-color: #fefaf5;
-    border-radius: 1rem;
-    padding: 1.5rem;
-    height: 100%;
+  background-color: #fefaf5;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  height: 100%;
 }
 
 .course-card h5 {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .course-card p {
-    font-size: 0.95rem;
+  font-size: 0.95rem;
 }
 
 .course-icon {
-    width: 40px;
-    height: 40px;
-    margin-bottom: 0.75rem;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 0.75rem;
 }
 
 .course-icon svg {
-    width: 100%;
-    height: 100%;
-    display: block;
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .btn-learn {
-    background-color: #1c1c1c;
-    margin-top: 1rem;
+  background-color: #1c1c1c;
+  margin-top: 1rem;
+}
+
+.about-section {
+  padding: 40px;
+  background-color: #f9f9f9;
+  font-family: sans-serif;
+}
+
+/* VIDEO ATAS */
+.about-video video {
+  width: 100%;
+  max-height: 300px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  object-fit: cover;
+}
+
+/* BAGIAN TULISAN + GRAFIK BERSEBELAHAN */
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* TEKS DI KIRI */
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-text h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.about-text p {
+  line-height: 1.6;
+}
+
+.btn-orange {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: orange;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-orange:hover {
+  background-color: #e05500;
+}
+
+/* GRAFIK DI KANAN */
+.chart-container {
+  flex: 1;
+  background-color: #1f2a30;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  min-width: 300px;
+}
+
+.chart-container h3 {
+  margin-bottom: 15px;
+  color: #fefaf5;
+}
+
+.bar {
+  margin-bottom: 10px;
+}
+
+.bar span {
+  display: inline-block;
+  width: 150px;
+}
+
+.bar-fill {
+  display: inline-block;
+  background-color: #ff5e5e;
+  height: 20px;
+  border-radius: 5px;
+  text-align: right;
+  padding-right: 5px;
+  line-height: 20px;
+  color: white;
+  min-width: 30px;
+}
+
+.partner-section {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.partner-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.partner-card {
+  background-color: #fefaf5;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  text-decoration: none;
+  color: black;
+  width: 180px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.partner-card:hover {
+  transform: translateY(-5px);
+}
+
+.partner-card img {
+  width: 50px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.partner-card span {
+  font-weight: 600;
+  text-align: center;
+  color: black;
+}
+
+.partner-card a {
+  color: black;
+  text-decoration: none;
+}
+
+.partner-card a:hover {
+  color: #555;
+}
+
+.partner-card a:hover {
+  color: #555;
+}
+
+/* === TABEL INFO === */
+.table-info {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fefaf5;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 1rem;
+  color: #1c1c1c;
+  margin-top: 20px;
+}
+
+.table-info thead th {
+  padding: 12px 16px;
+  background-color: #fdf5e6;
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 1px solid #ddd;
+}
+
+.table-info tbody td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+.table-info tbody tr:last-child td {
+  border-bottom: none;
+}
+
+#join {
+  background-color: #ff7937;
+  background-image: url("../img/bg-join.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 512px;
+}
+
+.btn-join {
+  background: #1c1c1c;
+  width: 205px;
+  height: 55px;
+  font-size: 18px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-pagination-bullet-active{
+  background: #ff7937;
+}
+
+@media (max-width: 600px) {
+  .table-info thead {
+    display: none;
+  }
+
+  .table-info tbody tr {
+    display: block;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eee;
+  }
+
+  .table-info tbody td {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: none;
+  }
+
+  .table-info tbody td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    flex: 1;
+    color: #333;
+  }
+}
+
+@media (min-width: 576px) {
+  section {
+    padding: 5rem 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  section {
+    padding: 6rem 3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
 }
 
 @media (max-width: 768px) {
-    .course-icon {
-        width: 32px;
-        height: 32px;
-    }
+  .course-icon {
+    width: 32px;
+    height: 32px;
+  }
 }
