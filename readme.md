@@ -15,6 +15,8 @@ Website ini dibuat untuk memenuhi tugas UAS Pemrograman Web
 - HTML5
 - CSS3
 - [Bootstrap 5](https://getbootstrap.com/)
+- [Swiper](https://swiperjs.com/)
+- [Google Fonts](https://fonts.google.com/)
 - JavaScript ES6
 
 
