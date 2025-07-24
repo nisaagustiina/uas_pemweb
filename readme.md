@@ -4,11 +4,11 @@ Website ini dibuat untuk memenuhi tugas uas Pemrograman Web
 
 ## 👥 Anggota Kelompok
 
-- Nisa Agustina
-- Raka Anggie Saputra
-- Muhammad Zacky Kurniawan
-- Nurlian D Jabir
-- Nauval Firmansyah
+- Nisa Agustina Maesaroh (240401070509)
+- Raka Anggie Saputra (240401010148)
+- Muhammad Zacky Kurniawan (240401010217)
+- Nurlian D Jabir (240401010243)
+- Nauval Firmansyah (240401010040)
 
 ## 🛠️ Teknologi yang Digunakan
 
