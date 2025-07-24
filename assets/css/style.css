@@ -2,11 +2,13 @@ body {
     font-family: "Plus Jakarta Sans", sans-serif;
     scroll-behavior: smooth;
     background-color: #ffffff;
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 .hero h1 {
-    font-size: 2.8rem;
+    font-size: clamp(1.5rem, 4vw, 2.8rem);
     font-weight: 700;
+    line-height: 1.2;
 }
 
 .highlight {
@@ -23,15 +25,22 @@ body {
     font-weight: 600;
     font-size: 1rem;
     text-decoration: none;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    background-color: #e66325;
+    color: #fff;
 }
 
 section {
-    padding: 6rem 1rem;
+    padding: 4rem 1rem;
 }
 
 .hero-img {
     max-width: 100%;
     border-radius: 1rem;
+    height: auto;
 }
 
 .navbar-brand span {
@@ -43,6 +52,7 @@ section {
     border-radius: 1rem;
     padding: 1.5rem;
     height: 100%;
+    margin-bottom: 1rem;
 }
 
 .course-card h5 {
@@ -71,41 +81,41 @@ section {
 }
 
 .about-section {
-    padding: 40px;
+    padding: 2rem 1rem;
     background-color: #f9f9f9;
     font-family: sans-serif;
 }
 
-/* VIDEO ATAS */
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.about-video {
+    width: 100%;
+}
+
 .about-video video {
     width: 100%;
     max-height: 300px;
     border-radius: 10px;
-    margin-bottom: 30px;
     object-fit: cover;
 }
 
-/* BAGIAN TULISAN + GRAFIK BERSEBELAHAN */
-.about-content {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    align-items: flex-start;
-}
-
-/* TEKS DI KIRI */
 .about-text {
-    flex: 1;
-    min-width: 300px;
+    width: 100%;
 }
 
 .about-text h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    margin-bottom: 1rem;
 }
 
 .about-text p {
     line-height: 1.6;
+    margin-bottom: 1rem;
 }
 
 .btn-orange {
@@ -122,42 +132,7 @@ section {
 
 .btn-orange:hover {
     background-color: #e05500;
-}
-
-/* GRAFIK DI KANAN */
-.chart-container {
-    flex: 1;
-    background-color: #1f2a30;
-    padding: 20px;
-    border-radius: 10px;
     color: white;
-    min-width: 300px;
-}
-
-.chart-container h3 {
-    margin-bottom: 15px;
-    color: #fefaf5;
-}
-
-.bar {
-    margin-bottom: 10px;
-}
-
-.bar span {
-    display: inline-block;
-    width: 150px;
-}
-
-.bar-fill {
-    display: inline-block;
-    background-color: #ff5e5e;
-    height: 20px;
-    border-radius: 5px;
-    text-align: right;
-    padding-right: 5px;
-    line-height: 20px;
-    color: white;
-    min-width: 30px;
 }
 
 .partner-section {
@@ -165,12 +140,19 @@ section {
     text-align: center;
 }
 
+.partner-section h2 {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    margin-bottom: 2rem;
+}
+
 .partner-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
     margin-top: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .partner-card {
@@ -179,12 +161,13 @@ section {
     border-radius: 12px;
     text-decoration: none;
     color: black;
-    width: 180px;
-    padding: 15px;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     transition: transform 0.3s ease;
+    min-height: 120px;
+    justify-content: center;
 }
 
 .partner-card:hover {
@@ -192,91 +175,454 @@ section {
 }
 
 .partner-card img {
-    width: 50px;
+    width: 40px;
     height: auto;
     margin-bottom: 10px;
-}
-
-.partner-card span {
-    font-weight: 600;
-    text-align: center;
-    color: black;
 }
 
 .partner-card a {
     color: black;
     text-decoration: none;
+    font-size: 0.9rem;
+    text-align: center;
 }
 
 .partner-card a:hover {
     color: #555;
 }
 
-...
-
-.partner-card a:hover {
-  color: #555;
-}
-
-/* === TABEL INFO === */
 .table-info {
-  width: 100%;
-  border-collapse: collapse;
-  background-color: #fefaf5;
-  border: 1px solid #eee;
-  border-radius: 10px;
-  overflow: hidden;
-  font-size: 1rem;
-  color: #1c1c1c;
-  margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fefaf5;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 0.9rem;
+    color: #1c1c1c;
+    margin-top: 20px;
 }
 
 .table-info thead th {
-  padding: 12px 16px;
-  background-color: #fdf5e6;
-  text-align: left;
-  font-weight: 600;
-  border-bottom: 1px solid #ddd;
+    padding: 12px 8px;
+    background-color: #fdf5e6;
+    text-align: left;
+    font-weight: 600;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.85rem;
 }
 
 .table-info tbody td {
-  padding: 12px 16px;
-  border-bottom: 1px solid #ddd;
+    padding: 12px 8px;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.85rem;
 }
 
 .table-info tbody tr:last-child td {
-  border-bottom: none;
-}
-
-@media (max-width: 600px) {
-  .table-info thead {
-    display: none;
-  }
-
-  .table-info tbody tr {
-    display: block;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #eee;
-  }
-
-  .table-info tbody td {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
     border-bottom: none;
-  }
-
-  .table-info tbody td::before {
-    content: attr(data-label);
-    font-weight: bold;
-    flex: 1;
-    color: #333;
-  }
 }
 
-@media (max-width: 768px) {
+.testimonial-content {
+    padding: 2rem 0;
+}
+
+.swiper {
+    width: 100%;
+    height: auto;
+    padding-bottom: 3rem;
+}
+
+.swiper-slide {
+    height: auto;
+}
+
+.swiper-pagination {
+    bottom: 0;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #ff7937;
+}
+
+#join {
+    padding: 3rem 1rem;
+    min-height: auto;
+}
+
+#join p {
+    font-size: clamp(1.2rem, 4vw, 2.5rem);
+    line-height: 1.3;
+    margin-bottom: 1rem;
+}
+
+#join .btn {
+    width: auto;
+    min-width: 160px;
+    height: auto;
+    padding: 0.75rem 1.5rem;
+    font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+}
+
+/* Mobile First Approach - Base styles for mobile */
+@media (max-width: 575.98px) {
+    /* Extra small devices */
+    body {
+        font-size: 14px;
+    }
+
+    .hero {
+        margin-top: 70px !important;
+        padding: 1.5rem 0;
+    }
+
+    .hero h1 {
+        font-size: clamp(1.3rem, 6vw, 1.8rem);
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero .row {
+        text-align: center;
+    }
+
+    .hero .col-lg-6:first-child {
+        order: 1;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero .col-lg-6:last-child {
+        order: 2;
+    }
+
+    .cta-button {
+        font-size: 0.9rem;
+        padding: 0.6rem 1.2rem;
+    }
+
+    section {
+        padding: 2rem 0.75rem;
+    }
+
+    .about-content {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .about-video {
+        order: 1;
+    }
+
+    .about-text {
+        order: 2;
+    }
+
+    .about-text h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .about-text p {
+        font-size: 0.9rem;
+    }
+
     .course-icon {
         width: 32px;
         height: 32px;
+    }
+
+    .course-card {
+        padding: 1rem;
+    }
+
+    .course-card h5 {
+        font-size: 1rem;
+    }
+
+    .course-card p {
+        font-size: 0.85rem;
+    }
+
+    .partner-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+        max-width: 100%;
+    }
+
+    .partner-card {
+        min-height: 100px;
+        padding: 0.75rem;
+    }
+
+    .partner-card img {
+        width: 30px;
+    }
+
+    .partner-card a {
+        font-size: 0.8rem;
+    }
+
+    .testimonial-content .col-lg-5 {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .testimonial-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .testimonial-content p {
+        font-size: 0.9rem;
+    }
+
+    .table-info thead {
+        display: none;
+    }
+
+    .table-info tbody tr {
+        display: block;
+        margin-bottom: 1rem;
+        border: 1px solid #eee;
+        border-radius: 8px;
+        padding: 1rem;
+        background-color: #fefaf5;
+    }
+
+    .table-info tbody td {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 0.5rem 0;
+        border-bottom: 1px solid #eee;
+        font-size: 0.8rem;
+    }
+
+    .table-info tbody td:last-child {
+        border-bottom: none;
+    }
+
+    .table-info tbody td::before {
+        content: attr(data-label) ": ";
+        font-weight: bold;
+        color: #333;
+        width: 45%;
+        text-align: left;
+        flex-shrink: 0;
+    }
+
+    .table-info tbody td:nth-child(1)::before {
+        content: "Tahun: ";
+    }
+
+    .table-info tbody td:nth-child(2)::before {
+        content: "Kebutuhan: ";
+    }
+
+    .table-info tbody td:nth-child(3)::before {
+        content: "Teknologi: ";
+    }
+
+    #join {
+        height: auto;
+        min-height: 200px;
+        padding: 2rem 1rem;
+        display: flex;
+        align-items: center;
+    }
+
+    #join p {
+        font-size: clamp(1rem, 5vw, 1.5rem);
+        margin-bottom: 1rem;
+    }
+
+    #join .btn {
+        width: 160px;
+        height: 45px;
+        font-size: 0.9rem;
+    }
+
+    .navbar-brand span {
+        font-size: 0.9rem;
+    }
+
+    .modal-dialog {
+        margin: 0.5rem;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .hero {
+        margin-top: 75px !important;
+        padding: 2rem 0;
+    }
+
+    .partner-container {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 400px;
+    }
+
+    #join p {
+        font-size: clamp(1.2rem, 4vw, 1.8rem);
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .hero {
+        margin-top: 80px !important;
+        padding: 2.5rem 0;
+    }
+
+    .hero .row {
+        text-align: left;
+    }
+
+    .hero .col-lg-6:first-child {
+        order: 1;
+        margin-bottom: 0;
+    }
+
+    .hero .col-lg-6:last-child {
+        order: 2;
+    }
+
+    .about-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .partner-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    section {
+        padding: 3rem 1rem;
+    }
+
+    #join {
+        height: 350px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .hero {
+        margin-top: 80px !important;
+    }
+
+    .about-content {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .about-video {
+        flex: 1;
+        margin-right: 2rem;
+    }
+
+    .about-text {
+        flex: 1;
+    }
+
+    .partner-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    #join {
+        height: 400px;
+    }
+}
+
+/* Extra Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+
+    #join p {
+        font-size: clamp(2rem, 3vw, 2.5rem);
+    }
+}
+
+/* Fix for very small screens */
+@media (max-width: 350px) {
+    .hero h1 {
+        font-size: 1.2rem;
+    }
+
+    .partner-container {
+        grid-template-columns: 1fr;
+        max-width: 200px;
+    }
+
+    .course-card {
+        padding: 0.75rem;
+    }
+
+    #join p {
+        font-size: 0.9rem;
+    }
+
+    #join .btn {
+        width: 140px;
+        height: 40px;
+        font-size: 0.8rem;
+    }
+}
+
+/* Utility classes for better mobile experience */
+.text-center-mobile {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .text-center-mobile {
+        text-align: left;
+    }
+}
+
+/* Fix overflow issues */
+.container-fluid {
+    overflow-x: hidden;
+}
+
+/* Ensure images don't break layout */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Better button spacing on mobile */
+@media (max-width: 575.98px) {
+    .btn {
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Fix modal on mobile */
+@media (max-width: 575.98px) {
+    .modal-dialog {
+        margin: 0.5rem;
+        max-width: calc(100% - 1rem);
+    }
+
+    .modal-content {
+        border-radius: 0.5rem;
+    }
+
+    .modal-body {
+        padding: 1rem;
     }
 }
