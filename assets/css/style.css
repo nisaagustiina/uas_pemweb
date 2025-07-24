@@ -257,6 +257,7 @@ section {
 
 .btn-join {
   background: #1c1c1c;
+  color: white;
   width: 205px;
   height: 55px;
   font-size: 18px;
@@ -264,9 +265,17 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
-.swiper-pagination-bullet-active{
+.btn-join:hover {
+  background: #333333;
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.swiper-pagination-bullet-active {
   background: #ff7937;
 }
 
