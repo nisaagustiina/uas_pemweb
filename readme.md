@@ -5,10 +5,10 @@ Website ini dibuat untuk memenuhi tugas uas Pemrograman Web
 ## 👥 Anggota Kelompok
 
 - Nisa Agustina
-- Raka
-- Zacky
-- Nurlian
-- Nauval
+- Raka Anggie Saputra
+- Muhammad Zacky Kurniawan
+- Nurlian D Jabir
+- Nauval Firmansyah
 
 ## 🛠️ Teknologi yang Digunakan
 
